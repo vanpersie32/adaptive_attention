@@ -84,4 +84,4 @@ Below is a comparison with other state-of-the-art systems (with according publis
 
 | Model | BLEU-4 | METEOR | ROUGE-L | CIDEr |
 |----|----|----|----|----|
-|**I_am_licong**|**0.629**| **0.352 ** | **0.705 ** | **1.134 ** |
+|**I_am_licong**|**0.629**|**0.352** |**0.705**|**1.134**|
