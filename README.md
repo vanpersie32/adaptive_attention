@@ -5,6 +5,15 @@ This is the implementation of adaptive attention. Besides, we add semantic atten
 - Tensorflow 1.01
 - numpy
 - matplotlib
+
+## Download Pretrained model
+
+## Download features for training and evaluation
+download the feature and place it in data folder
+generate soft link in adaptive_attention_XELoss/data and adative_attetntion_scst/data
+```bash
+```
+
 ## Train the model
 1. train the model with cross entropy loss
 2. train the model with self critical sequence learning
