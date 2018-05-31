@@ -5,15 +5,16 @@ This is the implementation of adaptive attention. Besides, we add semantic atten
 1. train the model with cross entropy loss
 2. train the model with self critical sequence learning
 
-### To train the adaptiive attention model with cross entropy loss:
-
+### Train the adaptiive attention model with cross entropy loss
+Type the command line and train adaptive attention with cross entropy loss:
 ```bash
 cd ~/adaptive_attention_XELoss
 train.py --freeze_step -1 2>&1 | tee res.log
 ```
 You can monitor the history performance on validation set by reading the res.log and we only save the best model on validation set. The performance of our model will peak after 20 epochs.
 
-### As fixed attention is a special case of adaptive attention, the code can also be used for training fixed attention. To train the fixed attention model with cross entropy loss:
+### Train the fixed attention model with cross entropy loss
+As fixed attention is a special case of adaptive attention, the code can also be used for training fixed attention with the following command line:
 ```bash
 cd ~/adaptive_attention_XELoss
 train.py --freeze_step 100000000 2>&1 |tee res.log
@@ -25,7 +26,7 @@ weights = tf.cond(self.freeze,lambda:tf.constant([[0.5,0.5]]),lambda: weights.
 ```
 We set weights of attribute attention and object attention to 0.5 and 0.5 respectively by default.
 
-### To train the adaptive attention model with self critical sequence learning
+### Train the adaptive attention model with self critical sequence learning
 ```bash
 cp ~/adaptive_attention_XELoss/model/* ~/adaptive_attention_scst/model/
 cd ~/adaptive_attention_scst/model
