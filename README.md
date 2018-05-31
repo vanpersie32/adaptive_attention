@@ -79,3 +79,9 @@ python eval_ema_online_val.py
 ```
 
 `eval_ema_online.py` generates caption for unlabeled test set, `eval_ema_online_val.py` generates caption for validation set.
+
+Below is a comparison with other state-of-the-art systems (with according published papers) on the MSCOCO evaluation server:
+
+| Model | BLEU-4 | METEOR | ROUGE-L | CIDEr |
+|----|----|----|----|----|
+|**I_am_licong**|**0.629**| **0.352 ** | **0.705 ** | **1.134 ** |
