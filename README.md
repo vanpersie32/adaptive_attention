@@ -7,18 +7,23 @@ This is the implementation of adaptive attention. Besides, we add semantic atten
 - matplotlib
 
 ## Download Pretrained model
+To upload features
 
 ## Download features for training and evaluation
+To upload pretrained model
+
 download the feature and place it in data folder
 generate soft link in adaptive_attention_XELoss/data and adative_attetntion_scst/data
 ```bash
+ln -s ~/adaptive_attention/data ~/adaptive_attention/adaptive_attention_scst
+ln -s ~/adaptive_attention/data ~/adaptive_attention/adaptive_attention_XEloss
 ```
 
 ## Train the model
 1. train the model with cross entropy loss
 2. train the model with self critical sequence learning
 
-### Train the adaptiive attention model with cross entropy loss
+### Train the adaptive attention model with cross entropy loss
 Type the command line and train adaptive attention with cross entropy loss:
 ```bash
 cd ~/adaptive_attention_XELoss
