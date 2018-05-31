@@ -7,8 +7,11 @@ This is the implementation of adaptive attention. Besides, we add semantic atten
 - matplotlib
 
 ## Download Pretrained model
+TO upload features
 
 ## Download features for training and evaluation
+To upload pretrained model
+
 download the feature and place it in data folder
 generate soft link in adaptive_attention_XELoss/data and adative_attetntion_scst/data
 ```bash
