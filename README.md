@@ -7,7 +7,11 @@ This is the implementation of adaptive attention. Besides, we add semantic atten
 - matplotlib
 
 ## Download Pretrained model
+<<<<<<< HEAD
 To upload features
+=======
+TO upload features
+>>>>>>> 83fce871b9d7e0c13db4563f69c14a2d63c6d1a1
 
 ## Download features for training and evaluation
 To upload pretrained model
