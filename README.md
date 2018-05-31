@@ -1,6 +1,10 @@
-# adaptive attention: combing object attention and attribute attention for image captioning
+# Adaptive attention: combing object attention and attribute attention for image captioning
 This is the implementation of adaptive attention. Besides, we add semantic attention correctness and exponential moving average when training our model. As fixed attention model is a special case of adaptive attention model, we can also train the it by setting freeze_step in the train.py to a very large value. The whole model can be trained within a day and CIDEr should reaches to 1.092 on MS COCO test set with EMA and 1.072 without EMA. 
 
+## Requirements
+Tensorflow 1.01
+numpy
+matplotlib
 ## Train the model
 1. train the model with cross entropy loss
 2. train the model with self critical sequence learning
