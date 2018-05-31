@@ -19,7 +19,11 @@ cd ~/adaptive_attention_XELoss
 train.py --freeze_step 100000000 2>&1 |tee res.log
 ```
 You can fixed the model by setting freeze_step to a very large value in command line. We can also change the relative weight to attribute attention and object attention in language_model.py
-by changing the line "weights = tf.cond(self.freeze,lambda:tf.constant([[0.5,0.5]]),lambda: weights". We set weights of attribute attention and object attention to 0.5 and 0.5 respectively by default.
+by changing the following line 
+```bash
+weights = tf.cond(self.freeze,lambda:tf.constant([[0.5,0.5]]),lambda: weights. 
+```
+We set weights of attribute attention and object attention to 0.5 and 0.5 respectively by default.
 
 ### To train the adaptive attention model with self critical sequence learning
 ```bash
