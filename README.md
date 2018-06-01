@@ -8,10 +8,10 @@ This is the implementation of adaptive attention. Besides, we add semantic atten
 
 ## Download Pretrained model
 
-To upload features
+To do:upload features
 
 ## Download features for training and evaluation
-To upload pretrained model
+To do:upload pretrained model
 
 download the feature and place it in data folder
 generate soft link in adaptive_attention_XELoss/data and adative_attetntion_scst/data
